@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body {
+    background-color: #141414; 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Form Container */
+form {
+    background-color: #222222; /* Slightly lighter dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form Input Fields */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333333;
+    border: 1px solid #ffffff; /* White border for better visibility */
+    border-radius: 4px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Readonly fields styling */
+form input[readonly] {
+    background-color: #444444; /* Slightly darker to indicate it's read-only */
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914; /* Netflix red */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submit Button */
+form input[type="submit"]:hover {
+    background-color: #b20710; /* Darker red for hover effect */
+}
+
+/* Label Styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* For better visibility and spacing */
+input[type="hidden"] {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="submit"] {
+        font-size: 14px;
+    }
+    
+}

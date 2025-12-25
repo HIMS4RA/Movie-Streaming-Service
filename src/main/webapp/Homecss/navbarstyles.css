@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Navigation Bar */
+.navbar {
+    width: 100%; /* Full width of the page */
+    padding: 20px 30px;
+    background-color: #000; /* Set black background for navbar */
+    position: absolute;
+    top: 0;
+    left: 0; /* Align from the left */
+    z-index: 10; /* Bring it above other elements */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    display: flex; /* Use flexbox for logo and navigation links */
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav items */
+}
+
+/* Logo Styles */
+.navbar h5 {
+    color: #fff; /* White color for the logo text */
+    margin: 0;
+    font-size: 24px; /* Slightly larger font for the logo */
+}
+
+/* Navigation Menu */
+.navbar ul {
+    list-style: none;
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: flex-end; /* Align items to the right */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff7f00; /* Orange on hover to match your theme */
+}

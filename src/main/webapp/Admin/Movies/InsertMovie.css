@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* AdminDashStyles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Limit the width of the form */
+    margin: auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Slightly lighter dark background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.top-bar {
+    background-color: #d32f2f; /* Red top bar */
+    padding: 10px;
+    text-align: center;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+.main-content {
+    margin-top: 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #d32f2f; /* Red title */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #555; /* Gray border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: #f5f5f5; /* Light text color */
+}
+
+input[type="file"] {
+    padding: 5px; /* Less padding for file inputs */
+}
+
+button {
+    background-color: #d32f2f; /* Red button */
+    color: white; /* White text on button */
+    border: none;
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}

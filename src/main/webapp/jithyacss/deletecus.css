@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body {
+    background-color: #141414; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222222; /* Slightly lighter background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size:21px;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* Light text for input */
+    font-size:23px;
+}
+
+input[type="text"][readonly] {
+    background-color: #444444; /* Different color for readonly */
+}
+
+.btn-delete {
+    background-color: #e50914; /* Netflix red */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color:black; /* Darker red on hover */
+    transform: scale(1.05);
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+	        background-image: url('images/bg.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat;
+           /* background-color: black;*/
+            color: white; /* White text color */
+            font-family: Calibri, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1{
+            text-align:center;
+            transition: transform 0.2s;
+        
+        }
+        h1:hover{
+           transform: scale(1.02);
+        }
+        .container1 {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #222; /* Darker background for form */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .title{
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        table{
+            width:100px;
+        }
+        
+        td{
+            font-size:18px;
+            padding: 10px;
+            vertical-align: middle;
+        
+        }
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 21px;
+            background-color: #333; /* Dark background for inputs */
+            color: white; /* White text in inputs */
+        }
+        .form-control::placeholder {
+            color: #aaa; /* Lighter placeholder text */
+        }
+        .submit {
+            display: flex; 
+            justify-content: center; /* Center the button */
+            margin-top: 20px; /* Space above the button */
+         }
+        .btn {
+            background-color: #E50914; /* Red button color */
+            color: white; /* White text on button */
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Added margin for better spacing */
+            
+        }
+        .btn:hover {
+            background-color: #E50914; /* Darker red on hover */
+            
+        }

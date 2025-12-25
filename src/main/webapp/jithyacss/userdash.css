@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix black */
+    color: white;
+    line-height: 1.6;
+}
+
+.site-name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #E50914; /* Netflix red */
+    text-decoration: none; /* Removes underline */
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.site-name:hover {
+    color: white;
+}
+
+.dashboard-container {
+    display: flex;
+    margin-top: 70px; /* Space for fixed header */
+    padding: 20px;
+    gap: 30px; /* More spacing between elements */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    margin-left: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Softer shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.main-content:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #E50914;
+    padding-bottom: 20px;
+}
+
+/* Center the form content and reduce the width */
+.form-container {
+    max-width: 600px; /* Smaller width */
+    margin: 0 auto; /* Centers the form horizontally */
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Add some shadow for better visual separation */
+}
+
+.user-info {
+    font-size: 22px; /* Reduced font size */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.user-info label {
+    font-weight: bold;
+    color: #E50914;
+}
+
+.user-info input {
+    font-size: 22px; /* Reduced font size */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    width: 100%; /* Full width inside the form container */
+    transition: border-color 0.3s ease;
+}
+
+.user-info input:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px; /* Slightly reduced gap between buttons */
+    justify-content: center;
+}
+
+.btn-update, .btn-delete {
+    width: 100px; /* Reduced button width */
+    height: 40px; /* Reduced button height */
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 18px; /* Reduced font size */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-update {
+    background-color: #E50914;
+}
+
+.btn-delete {
+    background-color: #333;
+}
+
+.btn-update:hover {
+    background-color: black;
+    transform: scale(1.1); /* Pop-up effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
+
+.btn-delete:hover {
+    background-color: #E50914;
+    transform: scale(1.1); /* Pop-up effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.btn-update:active, .btn-delete:active {
+    transform: scale(1.05);
+    box-shadow: none; /* Reduce shadow on click */
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix black */
+    color: white;
+}
+
+header {
+    background-color: #141414;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #E50914; /* Netflix red */
+    text-decoration: none;
+}
+
+.dashboard-container {
+    display: flex;
+    margin-top: 70px; /* Space for fixed header */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    height: 50px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #E50914;
+    transform: scale(1.1); /* Pop-up effect */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 50px;
+    margin-left: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px black; /* Black outline for title */
+    margin-bottom: 20px;
+}
+
+.create-announcement-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-create-announcement {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-create-announcement:hover {
+    background-color: #E50914;
+    box-shadow: 0 0 10px #E50914; /* Glow effect on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Table styling for announcement details */
+.announcement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.announcement-table th, .announcement-table td {
+    padding: 15px;
+    text-align: left;
+    color: white;
+}
+
+.announcement-table th {
+    background-color: #333; /* Dark background for header */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.announcement-table td {
+    background-color: #222; /* Dark background for table rows */
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+}
+
+.announcement-table tr:hover td {
+    background-color: #444; /* Slightly lighter background on row hover */
+}
+
+/* Action buttons */
+.btn-update{
+    background-color: black; /* Netflix red */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.btn-delete {
+    background-color: #E50914; /* Netflix red */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.btn-update:hover{
+	background-color: #E50914; /* Netflix Red on hover */
+    box-shadow: 0 0 10px #E50914; /* Glow effect on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+.btn-delete:hover {
+	background-color:black; /* Netflix Red on hover */
+    box-shadow: 0 0 10px black; /* Glow effect on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}

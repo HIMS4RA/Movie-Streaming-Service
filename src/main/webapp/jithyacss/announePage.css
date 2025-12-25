@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* Netflix-style theme */
+body {
+	
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #141414; /* Netflix dark background */
+    background-image: url('../images/anpage.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    color: #ffffff;
+    margin: 35px;
+    padding: 20px;
+}
+
+/* Title Styling */
+.announcement-title {
+   font-size: 48px;
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Round font */
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left outline */
+       	3px -1px 0 #000,  /* Top-right outline */
+        -1px 3px 0 #000,  /* Bottom-left outline */
+        5px 1px 0 #000;   /* Bottom-right outline */
+}
+
+/* Announcement details */
+.announcement-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between boxes */
+}
+
+.announcement-info {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.announcement-info h3 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: red; /* Netflix red for category titles */
+}
+
+.announcement-info p {
+    margin: 5px 0;
+    font-size: 27px;
+    color: white;
+}
+
+.announcement-info input {
+    display: none; /* Hide inputs as they are readonly */
+}
+
+.card-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card-close:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.8); /* Stronger glow on hover */
+    transform: scale(1.05);
+}
+
+/* Different card themes */
+.card-success {
+    background-color: #28a745; /* Green for success */
+}
+
+.card-warning {
+    background-color: #ffc107; /* Yellow for warning */
+}
+
+.card-promo {
+    background-color: #007bff; /* Blue for promotions */
+}
+
+.card-default {
+    background-color: black; /* Grey for default */
+}
+
+/* Hover effect */
+.announcement-info:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

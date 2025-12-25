@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix black */
+    color: white;
+}
+
+
+.main-content {
+    flex-grow: 1;
+    padding: 25px;
+    margin-left: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px black; /* Black outline for title */
+    margin-bottom: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+    max-width: 80%; /* Reduce the overall width */
+    margin: 0 auto;
+     margin-left: 20px;
+}
+
+.tb {
+     width: 100%; /* Keep it at full width within its container */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tb th, .tb td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+.tb th {
+    background-color: #333; /* Dark background for header */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tb td {
+    background-color: #222; /* Dark background for table rows */
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+}
+
+.tb tr:hover td {
+    background-color: #444; /* Slightly lighter background on row hover */
+}
+
+/* Buttons */
+.btn-update {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    background-color: #E50914;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-update:hover {
+    background-color: #E50914;
+    box-shadow: 0 0 10px #E50914;
+    transform: scale(1.05);
+}
+
+.btn-delete:hover {
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    transform: scale(1.05);
+}
+
+buttton a{
+	text-decoration:none;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #141414;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E50914;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+
